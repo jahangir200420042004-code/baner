@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ 
+
+$color-white:#FFFFFF;
+$color-red:#AE1332;
+
+
+.header{
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid rgb(203, 201, 198);
+
+
+    display: flex;
+    align-items: center;
+     justify-content: space-between;
+
+
+    &__link{
+     color:#AE1332; 
+     text-decoration: none;
+    
+    }
+    &__nav{
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+
+    
+    }
+     &__logo{
+    width: 220px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+     }
+
+     &__cart{
+       width: 32px;
+    height: auto; 
+     }
+
+}
