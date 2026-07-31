@@ -7,6 +7,18 @@
 
 $color-white:#FFFFFF;
 $color-red:#AE1332;
+$color-grean:#A4CB66;
+$color-yellow:#F5CE13;
+$color-black:#000000;
+
+
+    @font-face {
+  font-family: 'DM Sans';
+  src: url('./font/DMSans_36pt-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+
+}
 
 
 .header{
@@ -45,3 +57,4 @@ $color-red:#AE1332;
      }
 
 }
+
