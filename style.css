@@ -1,9 +1,18 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "DM Sans", sans-serif; /* Применили шрифт ко всем элементам */
+  font-weight: 500;
 }
 
+@font-face {
+  font-family: "DM Sans";
+  src: url("./font/DMSans_36pt-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
 .header {
   width: 100%;
   height: 50px;
@@ -30,6 +39,109 @@
 .header__cart {
   width: 32px;
   height: auto;
+}
+
+.main {
+  background-color: #AE1332;
+  padding: 60px 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.steps {
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  text-align: center;
+  color: #ffffff;
+}
+.steps__title {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+}
+.steps__description {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  opacity: 0.9;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.steps__content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.steps__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+@media (max-width: 900px) {
+  .steps__cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.steps__card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+.steps__card-text {
+  font-size: 13px;
+  line-height: 1.4;
+  color: #666666;
+  margin: 0;
+}
+
+.stepsbtn {
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.stepsbtn--red {
+  background-color: #ae1347;
+  color: #ffffff;
+}
+.stepsbtn--green {
+  background-color: #a3e043;
+  color: #ffffff;
+}
+.stepsbtn--yellow {
+  background-color: #f8e71c;
+  color: #4a4a4a;
+}
+
+.steps__image {
+  width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  max-height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.steps__image img {
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
