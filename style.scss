@@ -20,36 +20,43 @@ $color-black: #000000;
 }
 
 .header {
-    width: 100%;
-    height: 50px;
-    border-bottom: 1px solid rgb(203, 201, 198);
+  width: 100%;
+  height: 50px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  border-bottom: 1px solid #e0e0e0;
 
+  &__nav {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    gap: 20px;
+  }
 
-    &__link {
-        color: $color-red; 
-        text-decoration: none;
-    }
+  &__link {
+    text-decoration: none;
+    color: #A60A24;
+    font-size: 17px;
+    font-weight: 500;
+  }
 
-    &__nav {
-        display: flex;
-        gap: 20px;
-        font-size: 18px;
+  &__logo {
+    &-img {
+      height: 18px;
+      display: block;
+      position: relative;
+      left: -70px;
     }
+  }
 
-    &__logo {
-        width: 220px;
-        height: auto;
-        display: flex;
-        justify-content: center;
+  &__cart {
+    &-img {
+      height: 24px;
+      display: block;
+      cursor: pointer;
     }
-
-    &__cart {
-        width: 32px;
-        height: auto; 
-    }
+  }
 }
 
 $bg-color: #AE1332;
@@ -65,7 +72,10 @@ $btn-yellow: #f8e71c;
   background-color: #AE1332;
   padding: 60px 20px;
   min-height: 100vh;
-  box-sizing: border-box;
+display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 .steps {
@@ -150,7 +160,7 @@ $btn-yellow: #f8e71c;
 
   &--yellow {
     background-color: $btn-yellow;
-    color: #4a4a4a;
+    color: #eae4e4;
   }
 }
 
@@ -170,3 +180,144 @@ $btn-yellow: #f8e71c;
   
   }
 }
+
+
+$color1:#F8766B;
+$color2:#EDD251;
+$color3:#9DC262;
+$color4:#BFD663;
+$color5:#E93F29;
+$color6:#DB4F4B;
+$color7:#9B5366;
+$color8:#F47F4C;
+$color9:#98B37E;
+
+
+
+
+.section__organic{
+  width: 100%;
+  max-width: 1215px;
+  margin: 60px 0 auto;
+  display: flex;
+  align-items: center;
+  background-color: $bg-color;
+  margin-top: 200px auto 0;
+}
+.container{
+ align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.title__organic{
+  width: 700px;
+  height: 180px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #AE1332;
+  text-align: center;
+  color: #FFFFFF;
+  padding-bottom: 50px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 800;
+ 
+}
+
+.container-fruits{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+
+}
+
+.fruit-card{
+ width: 389px;
+  height: 465px;
+  gap: 20px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+justify-content:center;
+align-items: center;
+
+
+h1{
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  font-size: 27px;
+  color: #FFFFFF;
+}
+p{
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+  img{
+    margin-top: 110px;
+    width: 295px;
+    height: 252px;
+    border-radius: 20px;
+    object-fit: cover;
+   
+  }
+
+ 
+  
+
+  &__Strawberry{
+    background-color: $color1;
+  }
+  &__Banana{
+    background-color: $color2;
+  }
+  &__Watermelon{
+    background-color: $color3;
+  }
+  &__Lime{
+    background-color: $color4;
+  }
+  &__Apple{
+    background-color: $color5;
+  }
+  &__Peach{
+    background-color: $color6;
+  }
+  &__Plums{
+    background-color: $color7;
+  }
+  &__Orange{
+    background-color: $color8;
+  }
+  &__Kiwi{
+    background-color: $color9;
+  }
+  
+}
+.fruit-card__price {
+  width: 136px;
+  height: 48px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  color: $bg-color; 
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  padding: 10px 20px;
+
+}
+
+ 
